@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.TransactionDetailsFragment"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:clickable="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Status"
+                    android:fontFamily="@font/roboto"
+                    />
+                <TextView
+                    android:id="@+id/statusValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Pending"
+                    android:background="@drawable/rounded_corner_label"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingStart="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rejectionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tran_details_layout_margin_top"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Rejection Reason"
+                    android:fontFamily="@font/roboto"
+                    />
+                <TextView
+                    android:id="@+id/rReasonValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="reason"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tran_details_layout_margin_top"
+                >
+                <TextView
+                    android:id="@+id/amountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Payable To You"
+                    android:fontFamily="@font/roboto"
+                    />
+                <TextView
+                    android:id="@+id/amountValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Rs 21000"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/tran_details_layout_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Service Charge"
+                    android:fontFamily="@font/roboto"
+                    />
+                <TextView
+                    android:id="@+id/serviceChargeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="3.5 %"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/tran_details_layout_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Transaction Amount"
+                    android:fontFamily="@font/roboto"
+                    />
+                <TextView
+                    android:id="@+id/totalAmountValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Rs 22000"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/tran_details_layout_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Transaction Id"
+                    android:fontFamily="@font/roboto"
+                    />
+                <TextView
+                    android:id="@+id/tIdValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="sdfgsgdjdggggdfgdf"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/tran_details_layout_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Transaction time "
+                    android:fontFamily="@font/roboto"
+                    />
+                <TextView
+                    android:id="@+id/tTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="10 12 2038 99: 67:88AM"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Payment Method"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                />
+             <!--        Section for UPI ID method-->
+    <LinearLayout
+        android:id="@+id/upiMethodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/tran_details_method_margin_top"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/nickNameUpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+
+            android:textSize="@dimen/payment_method_title_size"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UPI ID"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/upiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <!--       End of UPI method -->
+
+
+
+    <!-- Section for paytm method -->
+    <LinearLayout
+        android:id="@+id/paytmMethodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/tran_details_method_margin_top"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/nickNamePayTm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textSize="@dimen/payment_method_title_size"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paytm Number"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/paytmText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <!--       End of paytm method -->
+
+    <!-- Section for paypal method -->
+    <LinearLayout
+        android:id="@+id/paypalMethodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/tran_details_method_margin_top"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/nickNamePaypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+            android:text="PayPal Details"
+            android:textSize="@dimen/payment_method_title_size"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PayPal ID"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/paypalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+    <!--       End of paypal method -->
+
+    <!--        Section for bank account method -->
+    <LinearLayout
+        android:id="@+id/bankDetailsMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/tran_details_method_margin_top"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/nickNameAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+            android:text="Bank Details"
+            android:textSize="@dimen/payment_method_title_size"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/accountNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Holder Name"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/holderNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IFSC Code"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ifscCodeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/accountTypeLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Type"
+            android:layout_marginTop="10dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/accountTypePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+
+    <!--        End Of bank account  method section -->
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

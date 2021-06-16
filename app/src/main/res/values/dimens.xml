@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_textbox_corner">8dp</dimen>
+    <dimen name="corner_radius_editText">5dp</dimen>
+
+    <dimen name="payment_method_title_size">15sp</dimen>
+    <dimen name="payment_method_delete_margin_top">15dp</dimen>
+
+    <dimen name="tran_details_layout_margin_top">15dp</dimen>
+    <dimen name="tran_details_method_margin_top">25dp</dimen>
+
+    <dimen name="bullet_dot_top_margin">5dp</dimen>
+    <dimen name="bullet_dot_separation">7dp</dimen>
+
+    <dimen name="logo_w_size">194dp</dimen>
+    <dimen name="logo_h_size">144dp</dimen>
+</resources>

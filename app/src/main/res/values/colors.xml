@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    <color name="primary">#4285F4</color>-->
+    <color name="primary">#03438c</color>
+    <color name="primary_var">#4285F4</color>
+    <color name="primary_light">#85ADEF</color>
+    <color name="secondary">#0F9D58</color>
+    <color name="secondary_var">#00DA6F</color>
+    <color name="warn">#DB4437</color>
+    <color name="grey">#BABCBE</color>
+    <color name="grey_light">#f9f9f9</color>
+
+    <color name="overlay">#26000000</color>
+    <color name="overlay_dark">#59000000</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_green">#0F9D58</color>
+    <color name="light_green2">#E6FFF3</color>
+
+    <color name="brand_black">#353535</color>
+</resources>

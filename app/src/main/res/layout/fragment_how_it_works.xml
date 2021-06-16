@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HowItWorksFragment"
+    android:background="@color/white"
+    android:padding="25dp"
+    android:clickable="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginBottom="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_marginTop="@dimen/bullet_dot_top_margin"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_baseline_circle_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/bullet_dot_separation"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/hit_l_1" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_marginTop="@dimen/bullet_dot_top_margin"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_baseline_circle_24"
+                    />
+
+                <TextView
+                    android:id="@+id/text2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/bullet_dot_separation"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/hiw_l_2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_marginTop="@dimen/bullet_dot_top_margin"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_baseline_circle_24"
+                    />
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="@dimen/bullet_dot_separation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/hiw_l_3" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_marginTop="@dimen/bullet_dot_top_margin"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_baseline_circle_24"
+                    />
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="@dimen/bullet_dot_separation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/hiw_l_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_marginTop="@dimen/bullet_dot_top_margin"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_baseline_circle_24"
+                    />
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="@dimen/bullet_dot_separation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/hiw_l_5" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_marginTop="@dimen/bullet_dot_top_margin"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_baseline_circle_24"
+                    />
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="@dimen/bullet_dot_separation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/hiw_l_6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_marginTop="@dimen/bullet_dot_top_margin"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_baseline_circle_24"
+                    />
+                <TextView
+                    android:id="@+id/slaText"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="@dimen/bullet_dot_separation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@+id/layout4"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

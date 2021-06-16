@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:padding="15dp"
+    android:background="@drawable/payment_methods_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    >
+
+
+    <!--        Section for UPI ID method-->
+    <LinearLayout
+        android:id="@+id/upiMethodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+        <TextView
+            android:id="@+id/nickNameUpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textSize="@dimen/payment_method_title_size"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UPI ID"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/upiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upiDelete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Remove Method"
+            android:layout_marginTop="@dimen/payment_method_delete_margin_top"
+            app:cornerRadius="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/warn"
+            app:strokeColor="@color/warn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+
+    </LinearLayout>
+
+    <!--       End of UPI method -->
+
+
+
+    <!-- Section for paytm method -->
+    <LinearLayout
+        android:id="@+id/paytmMethodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+        <TextView
+            android:id="@+id/nickNamePayTm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textSize="@dimen/payment_method_title_size"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paytm Number"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/paytmText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/paytmDelete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Remove Method"
+            android:layout_marginTop="@dimen/payment_method_delete_margin_top"
+
+
+            app:cornerRadius="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/warn"
+            app:strokeColor="@color/warn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+    </LinearLayout>
+    <!--       End of paytm method -->
+
+    <!-- Section for paypal method -->
+    <LinearLayout
+        android:id="@+id/paypalMethodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/nickNamePaypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+            android:text="PayPal Details"
+            android:textSize="@dimen/payment_method_title_size"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PayPal ID"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/paypalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/paypalDelete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Remove Method"
+            android:layout_marginTop="@dimen/payment_method_delete_margin_top"
+            app:cornerRadius="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/warn"
+            app:strokeColor="@color/warn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+    </LinearLayout>
+    <!--       End of paypal method -->
+
+    <!--        Section for bank account method -->
+    <LinearLayout
+        android:id="@+id/bankDetailsMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/nickNameAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_black"
+            android:fontFamily="@font/roboto"
+            android:text="Bank Details"
+            android:textSize="@dimen/payment_method_title_size"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/accountNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Holder Name"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/holderNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IFSC Code"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ifscCodeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/accountTypeLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Type"
+            android:layout_marginTop="10dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/accountTypePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:enabled="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/accountDelete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Remove Method"
+            android:layout_marginTop="@dimen/payment_method_delete_margin_top"
+            app:cornerRadius="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/warn"
+            app:strokeColor="@color/warn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+    </LinearLayout>
+
+
+    <!--        End Of bank account  method section -->
+
+
+
+</LinearLayout>

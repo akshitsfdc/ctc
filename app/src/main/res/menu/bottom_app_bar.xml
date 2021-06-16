@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/history_out"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="History"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/methods"
+        android:title="Payment Methods"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/addMethods"
+        android:title="Add Payment Method"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/removeMethods"
+        android:title="Remove Payment Methods"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/history"
+        android:title="Transaction History"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/share"
+        android:title="Share App"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/hiw"
+        android:title="How It Works"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/support"
+        android:title="Contact Support"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        />
+</menu>

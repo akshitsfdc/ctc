@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Credit To Cash</string>
+
+
+    <string name="msg_frg_tag">message_frag</string>
+    <string name="generic_error_msg">Something went wrong!</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+
+    <string name="skip_txt_link"><u>Skip For Now</u></string>
+    <string name="profile_pic_path">profile_pictures/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="rs_symbol">\u20B9</string>
+
+    <!--    Titles-->
+    <string name="home_title">Home</string>
+    <string name="payment_history_title">Transaction History</string>
+    <string name="transaction_title">Transaction</string>
+    <string name="transaction_detail_title">Transaction Details</string>
+    <string name="hiw_title">How It Works</string>
+
+    <!--Tags-->
+    <string name="home_tag">home_frg</string>
+    <string name="add_payment_tag">add_payment_frg</string>
+    <string name="payment_methods_tag">payment_methods_frg</string>
+    <string name="payment_tag">payment_frg</string>
+    <string name="success_fail_tag">success_fail_frg</string>
+    <string name="transaction_details_tag">transaction_details_frg</string>
+    <string name="transaction_history_tag">transaction_history_frg</string>
+    <string name="hiw_tag">hiw_frg</string>
+
+    <!--Collections-->
+    <string name="info_coll">app_info</string>
+    <string name="info_doc">meta</string>
+    <string name="user_coll">users</string>
+    <string name="user_transaction">transactions</string>
+    <string name="payment_method_field">paymentMethods</string>
+
+    <!--Messages-->
+    <string name="transaction_deduction_note">will be sent to your selected method after the service charge deduction</string>
+    <string name="transaction_method">Select method through which you want to receive your payment</string>
+    <string name="add_transaction_method">Select payment method type through which you want to receive your payment</string>
+    <string name="add_method_nick_name_editText">Will help you to identify your method</string>
+    <string name="helper_upi_txt">Enter UPI ID e.g xxxxxx@upi</string>
+    <string name="helper_paytm_txt">Enter paytm number e.g +91xxxxxx9038</string>
+    <string name="helper_paypal_txt">Enter paypal ID e.g akxxxx@domain.com</string>
+
+    <string name="status_rejected">rejected</string>
+
+    <string name="support_email">support@credittocash.app</string>
+    <string name="app_url">https://play.google.com/store/apps/details?id=com.a3k.credittocash</string>
+    <string name="no_payment_method_found">No Payment Method Found</string>
+    <string name="no_recent_transactions">No Recent Transactions</string>
+    <string name="no_transaction_history">No Transaction History</string>
+    <string name="hit_l_1">User will go to transaction screen and enter amount to be Cashified.</string>
+    <string name="hiw_l_2">A small service charge will be applied on each transaction which may vary time to time. The same will be displayed to the user below amount field.</string>
+    <string name="hiw_l_3">User will select the currency from the dropdown of all supported currencies.</string>
+    <string name="hiw_l_4">User will select the payment method through which user wants to get the payment (e.g UPI, PayTM, PayPal, Bank Account).</string>
+    <string name="hiw_l_5">User will be shown the final amount(after service charge deduction), which will be transferred to the user</string>
+    <string name="hiw_l_6">After Completion of the transaction user can track status of his/her payment in transaction history</string>
+
+</resources>

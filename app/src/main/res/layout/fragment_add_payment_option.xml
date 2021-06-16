@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AddPaymentOptionFragment"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@color/overlay_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_corner_bg"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_bg"
+        >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="?actionBarSize"
+
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/brand_black"
+               android:fontFamily="@font/roboto_medium"
+               android:text="Add Payment Method"
+               android:textSize="18sp"
+              android:layout_centerInParent="true"
+               />
+
+           <ImageView
+               android:id="@+id/backButton"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:src="@drawable/ic_baseline_arrow_back_24"
+               android:layout_alignParentStart="true"
+               android:layout_centerVertical="true"
+
+               />
+       </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Method Type"
+            app:helperTextEnabled="true"
+            app:helperText="@string/add_transaction_method"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/methodPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nickNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Method's Nick Name "
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:helperTextEnabled="true"
+            app:helperText="@string/add_method_nick_name_editText"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nickNameTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        Section for UPI ID method-->
+            <LinearLayout
+                android:id="@+id/upiMethodLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brand_black"
+                    android:fontFamily="@font/roboto"
+                    android:text="UPI ID Details"
+                    android:textSize="14sp"
+                    android:layout_marginTop="18dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter UPI ID"
+                    app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+                    app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+                    app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+                    app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="10dp"
+                    app:helperTextEnabled="true"
+                    app:helperText="@string/helper_upi_txt"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/upiText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        <!--       End of UPI method -->
+
+
+
+        <!-- Section for paytm method -->
+        <LinearLayout
+            android:id="@+id/paytmMethodLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_black"
+                android:fontFamily="@font/roboto"
+                android:text="Paytm Details"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Paytm Number"
+                app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                app:helperTextEnabled="true"
+                app:helperText="@string/helper_paytm_txt"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/paytmText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="13"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <!--       End of paytm method -->
+
+        <!-- Section for paypal method -->
+        <LinearLayout
+            android:id="@+id/paypalMethodLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_black"
+                android:fontFamily="@font/roboto"
+                android:text="PayPal Details"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter PayPal ID"
+                app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                app:helperTextEnabled="true"
+                app:helperText="@string/helper_paypal_txt"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/paypalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <!--       End of paypal method -->
+
+        <!--        Section for bank account method -->
+        <LinearLayout
+            android:id="@+id/bankDetailsMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_black"
+                android:fontFamily="@font/roboto"
+                android:text="Bank Details"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account Number"
+                app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/accountNumberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account Holder Name"
+                app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/holderNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IFSC Code"
+                app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+                app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ifscCodeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/accountTypeLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account Type"
+                android:layout_marginTop="10dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/accountTypePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+<!--        End Of bank account  method section -->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addMethodButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add Payment Method"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="10dp"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

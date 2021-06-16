@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "45489471309",
+    "project_id": "credittocash-a6b0d",
+    "storage_bucket": "credittocash-a6b0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45489471309:android:51f61a6741cf4513f74104",
+        "android_client_info": {
+          "package_name": "com.a3k.credittocash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45489471309-nups32i2c0ftm4cg7dpeiu2mj7f8sb07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a3k.credittocash",
+            "certificate_hash": "514c8a9b85a17271b4f96be33bb621c953147651"
+          }
+        },
+        {
+          "client_id": "45489471309-ti0vhce631a67kn9j0holq4j7quk7sdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwVNirb4xPXMmtwCKMF3n67bNpR_DHeaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45489471309-ti0vhce631a67kn9j0holq4j7quk7sdj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

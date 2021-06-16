@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.PaymentFragment"
+    android:background="@color/white"
+    android:padding="25dp"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Amount"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius_editText"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius_editText"
+        app:boxCornerRadiusBottomStart="@dimen/corner_radius_editText"
+        app:boxCornerRadiusBottomEnd="@dimen/corner_radius_editText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:helperTextEnabled="true"
+        app:helperText="Service charge 5% will be applied"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/currencyInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Your Currency"
+        android:layout_marginTop="25dp"
+        app:helperTextEnabled="true"
+        app:helperText=""
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/currencyPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Payment Method"
+        android:layout_marginTop="25dp"
+        app:helperTextEnabled="true"
+        app:helperText="@string/transaction_method"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/paymentMethodPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addMethodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Add Method"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_baseline_add_24"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Remove Method"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_remove_24"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_medium"
+            />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/makePaymentButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Make Transaction"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="10dp"
+        android:textAllCaps="false"
+        style="@style/Widget.MaterialComponents.Button"
+        />
+</LinearLayout>
